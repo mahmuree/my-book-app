@@ -1,0 +1,225 @@
+/* Genel Ayarlar */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern ve okunabilir bir yazı tipi */
+  color: #333333;
+  background-color: #e9ecef; /* Daha açık bir arka plan rengi */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Başlık Stilleri */
+h1, h2 {
+  color: #007bff; /* Canlı mavi tonları */
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Login ve Register Formları */
+.login, .register {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login:hover, .register:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.login h2, .register h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+p {
+  font-size: 14px;
+  color: #666666;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Kitap Listesi */
+.book-list {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.book-item {
+  padding: 20px;
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-item:last-child {
+  border-bottom: none;
+}
+
+.book-item:hover {
+  background-color: #f1f3f5;
+  transform: translateY(-2px);
+}
+
+.book-item h3 {
+  margin: 0;
+  color: #007bff;
+}
+
+.book-item p {
+  margin: 5px 0;
+  color: #666666;
+}
+
+.book-item button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-item button:hover {
+  background-color: #c82333;
+}
+
+/* Kitap Formu */
+.book-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.book-form h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.book-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-form input[type="text"] {
+  margin-bottom: 15px;
+}
+
+.book-form button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.book-form button:focus {
+  outline: none;
+}
+
+/* Medya Sorguları */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .login, .register, .book-list, .book-form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  button {
+    padding: 10px 16px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+  }
+}
